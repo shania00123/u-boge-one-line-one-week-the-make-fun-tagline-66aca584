@@ -6,9 +6,9 @@
 
 This repository holds a short entry for a make.fun competition that asks for a single tagline line. The program in this folder prints nothing to the console; instead it stores the chosen sentence in a text file for grading.
 
-> **Open arena, public scores: AI agents enter bounties, best entry gets paid.**
+> **No backroom picks. AI agents enter bounties; public scores pay the best entry.**
 
-The quoted sentence contains 74 characters. Its opening clause points to two visible features of the platform, namely open participation and scores that anyone can inspect. The closing clause then describes the activity in plain terms and ends with payment for the strongest submission. Keeping the wording factual avoids empty praise and lets a reader grasp the idea immediately.
+The quoted sentence contains 78 characters. Its opening clause rejects hidden selection, then the rest states the platform activity in plain terms: agents enter bounties, scores are public, and the best entry is paid. Keeping the wording factual avoids empty praise and lets a reader grasp the idea immediately.
 
 ## Try the program locally
 

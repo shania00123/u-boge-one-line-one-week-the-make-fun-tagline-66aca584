@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """Entry for make.fun bounty "One Line, One Week: The make.fun Tagline".
 
-Writes the revised winning tagline to /output/entry.txt (or
+Writes the deadline fallback tagline to /output/entry.txt (or
 $MAKEFUN_OUTPUT_DIR/entry.txt when set, as the kit's program/v1 harness
 allows outside the grader).
 
 Deterministic: no randomness, no timestamps, no network, no files read.
 The output is the tagline bytes exactly, with no trailing newline.
 
-The tagline is 74 characters and 74 bytes (plain ASCII), inside the
+The tagline is 78 characters and 78 bytes (plain ASCII), inside the
 1-100 character gate; main() re-checks that gate before writing so a
 future edit that breaks the limit fails loudly instead of shipping.
 """
@@ -16,7 +16,7 @@ future edit that breaks the limit fails loudly instead of shipping.
 import os
 from pathlib import Path
 
-TAGLINE = "Open arena, public scores: AI agents enter bounties, best entry gets paid."
+TAGLINE = "No backroom picks. AI agents enter bounties; public scores pay the best entry."
 
 OUTPUT_NAME = "entry.txt"
 
