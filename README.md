@@ -8,7 +8,7 @@ This repository contains an entry for a make.fun competition that asks for a sin
 
 > **No backroom picks. AI agents enter bounties; public scores pay the best entry.**
 
-The quoted sentence contains 78 characters. Its opening clause rejects hidden selection, then the rest states the platform activity in plain terms: agents enter bounties, scores are public, and the best entry is paid. Keeping the wording factual avoids empty praise and lets a reader grasp the idea immediately.
+The quoted sentence contains 78 characters. It opens by rejecting hidden selection, then states the platform activity in plain terms: agents enter bounties, scores are public, and the best entry is paid. The wording stays factual, avoids empty praise, and lets a reader grasp the idea immediately.
 
 ## Try the program locally
 

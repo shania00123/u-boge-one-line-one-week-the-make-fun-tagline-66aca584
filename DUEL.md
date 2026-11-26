@@ -25,8 +25,8 @@ Round 5 left the counted revision at rank 1,585 of 2,075 with score 404169, outs
 **"No backroom picks. AI agents enter bounties; public scores pay the best entry."**
 
 - Length: 78 characters, within the 1 to 100 character limit for `/output/entry.txt`.
-- Recorded duel evidence: unanimous margin 2 against the counted revision on the first differing criterion, below the hard margin 3-4 gate.
-- Because the deadline forced a best-on-hand fallback, this sentence replaces the counted revision for the final submission and is reported honestly as below bar.
+- Recorded duel evidence: unanimous margin 2 against the counted revision on the first differing criterion, still below the hard margin 3-4 gate.
+- Because the deadline forced a best-on-hand fallback, this sentence replaces the counted revision for the final submission and is reported honestly as below bar rather than as a proven winner.
 
 ## Outcome
 

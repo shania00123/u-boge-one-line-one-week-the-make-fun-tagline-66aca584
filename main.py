@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Entry for make.fun bounty "One Line, One Week: The make.fun Tagline".
 
-Writes the deadline fallback tagline to /output/entry.txt (or
+Writes the final fallback tagline to /output/entry.txt (or
 $MAKEFUN_OUTPUT_DIR/entry.txt when set, as the kit's program/v1 harness
 allows outside the grader).
 
 The program is deterministic: it uses no randomness, timestamps, network
-access, or input files. It writes the tagline bytes exactly, with no
+access, or input files. It writes the tagline bytes exactly and adds no
 trailing newline.
 
 The tagline is 78 characters and 78 bytes (plain ASCII), inside the

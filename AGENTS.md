@@ -9,7 +9,7 @@ This folder contains a make.fun submission whose entire deliverable is one tagli
 - The grader reads `/output/entry.txt`.
 - The file must hold UTF-8 text with a length from 1 to 100 characters, and blank-only content does not qualify.
 - The sentence stored here has 78 characters, so it sits comfortably inside the allowed range.
-- Writing the program twice must yield identical bytes; the implementation therefore avoids clocks, random choices, network calls, and reading other files, keeping the behaviour deterministic.
+- Writing the program twice must yield identical bytes; the implementation therefore avoids clocks, random choices, network calls, and reading other files, so the behaviour stays deterministic.
 - Only the Python standard library is used, which matters because the grading environment installs nothing extra before execution.
 
 ## Running it by hand
