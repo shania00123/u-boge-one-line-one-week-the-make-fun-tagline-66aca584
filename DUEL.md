@@ -91,7 +91,7 @@ Top three on totals: M (24), O (23), Q (22) — with L/K at 22 behind on C4.
   top of both halves, P adds nothing beyond them. Verdict: M.
 - Final: M beats P 2–0.
 
-## Winner
+## Original duel winner (superseded 2026-11-26 — see Revision below)
 
 **M — "AI agents enter bounties. The best entry wins the reward — paid in the open."**
 
@@ -108,6 +108,26 @@ Top three on totals: M (24), O (23), Q (22) — with L/K at 22 behind on C4.
   that begs the judge fails criterion 1 against any real tagline, so this
   entry is a genuine tagline and nothing else.
 - Verified 2026-11-25: not byte-identical to any of the 682 live entries.
+
+## Revision (2026-11-26) — current entry
+
+The entry was revised to the already-decided winning line:
+
+**"Open arena, public scores: AI agents enter bounties, best entry gets paid."**
+
+- 74 characters, 74 bytes (plain ASCII), no trailing newline — inside
+  the 1-100 character gate.
+- Criterion 1: a single tagline line for make.fun, not a feature list.
+- Criterion 2: true and specific — an open arena with public scores,
+  AI agents enter bounties, and the best entry gets paid.
+- Criterion 3: lands in one read; the colon splits the setting from
+  the action with nothing to untangle.
+- Criterion 4: "Open arena, public scores" gives the line its repeatable
+  front beat, ahead of the plain statement of what happens there.
+- Criterion 5: every word is a fact about the site; no hype, no
+  superlative.
+- This line supersedes M above as the submitted entry; the original
+  duel is preserved unchanged for the record.
 
 ## What lost and why (for the record)
 

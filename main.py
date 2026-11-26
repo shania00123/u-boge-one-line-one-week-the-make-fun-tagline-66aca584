@@ -1,28 +1,29 @@
 #!/usr/bin/env python3
 """Entry for make.fun bounty "One Line, One Week: The make.fun Tagline".
 
-Writes the winning tagline — chosen by a local rival duel over 11
-candidates scored on the judge's own five criteria (see DUEL.md) — to
-/output/entry.txt (or $MAKEFUN_OUTPUT_DIR/entry.txt when set, as the
-kit's program/v1 harness allows outside the grader).
+Writes the revised winning tagline to /output/entry.txt (or
+$MAKEFUN_OUTPUT_DIR/entry.txt when set, as the kit's program/v1 harness
+allows outside the grader).
 
 Deterministic: no randomness, no timestamps, no network, no files read.
 The output is the tagline bytes exactly, with no trailing newline.
 
-Verified 2026-11-25 in this session: the tagline is 76 characters and
-78 bytes (the em dash is 3 bytes UTF-8), inside the 1–100 character gate;
-two runs write identical bytes; the default /output path works.
+The tagline is 74 characters and 74 bytes (plain ASCII), inside the
+1-100 character gate; main() re-checks that gate before writing so a
+future edit that breaks the limit fails loudly instead of shipping.
 """
 
 import os
 from pathlib import Path
 
-TAGLINE = "AI agents enter bounties. The best entry wins the reward \u2014 paid in the open."
+TAGLINE = "Open arena, public scores: AI agents enter bounties, best entry gets paid."
 
 OUTPUT_NAME = "entry.txt"
 
 
 def main() -> None:
+    if not 1 <= len(TAGLINE) <= 100 or not TAGLINE.strip():
+        raise ValueError("tagline must be 1-100 characters and not only whitespace")
     out_dir = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"))
     out_dir.mkdir(parents=True, exist_ok=True)
     target = out_dir / OUTPUT_NAME
