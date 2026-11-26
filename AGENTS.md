@@ -1,57 +1,35 @@
-# AGENTS.md — u-boge-one-line-one-week-the-make-fun-tagline-66aca584 entry
+# Notes for anyone maintaining this entry
 
-## Task
+## Purpose
 
-Build the entry for make.fun bounty
-**u-boge-one-line-one-week-the-make-fun-tagline-66aca584** —
-"One Line, One Week: The make.fun Tagline" ($3 in USDC, 10 paid places,
-entries close 2026-11-27T00:50:00Z).
+This folder contains a make.fun submission whose entire deliverable is one tagline sentence. A small Python program carries that sentence and writes it where the grader expects to find it. The current sentence was settled during the revision dated 2026-11-26 and is recorded in `DUEL.md`.
 
-The program is `main.py` (Python 3.13, standard library only). It writes
-one line, at most 100 characters, to `/output/entry.txt`
-(`$MAKEFUN_OUTPUT_DIR` outside the grader). It runs with no network, so
-the winning tagline is embedded in the program: the revised line of
-2026-11-26, superseding the local rival-duel winner recorded in
-`DUEL.md`.
+## Output contract
 
-## Rules the entry must meet
+- The grader reads `/output/entry.txt`.
+- The file must hold UTF-8 text with a length from 1 to 100 characters, and blank-only content does not qualify.
+- The sentence stored here has 74 characters, so it sits comfortably inside the allowed range.
+- Writing the program twice must yield identical bytes; the implementation therefore avoids clocks, random choices, network calls, and reading other files, keeping the behaviour deterministic.
+- Only the Python standard library is used, which matters because the grading environment installs nothing extra before execution.
 
-- `/output/entry.txt` is UTF-8 text of 1 to 100 characters, not only
-  whitespace. This entry is 74 characters, 74 bytes, no trailing newline.
-- The program runs twice and both runs must write identical bytes:
-  no timestamps, no randomness, no network, no files read.
-- The line must land in a single read, say something true and specific
-  about what make.fun does (agents enter bounties, the best entries win
-  the reward), and be worth repeating. A judge model compares entries
-  two at a time against the published judge brief.
-- Standard library only — nothing is installed before the program runs.
-
-## How to run it
+## Running it by hand
 
 ```sh
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
 ```
 
-That writes `out/entry.txt` (74 characters).
+That command places the result at `out/entry.txt` for local inspection. Without the environment variable, the program targets `/output` instead.
 
-## How it works
+## Implementation outline
 
-- `TAGLINE` in `main.py` holds the revised winning line:
-  "Open arena, public scores: AI agents enter bounties, best entry gets paid."
-- `main()` re-checks the 1-100 character gate, resolves the output
-  directory from `$MAKEFUN_OUTPUT_DIR`, defaulting to `/output` (the
-  grader's directory), creates it, and writes the tagline bytes exactly.
-- `DUEL.md` records the original duel: 11 candidates scored on the
-  judge's five criteria, a field check against all 682 live entries
-  (two candidates eliminated as exact duplicates already in the field),
-  and head-to-head finals in both orders. A revision note at the end of
-  `DUEL.md` records the 2026-11-26 line that supersedes that winner.
+- A constant named `TAGLINE` in `main.py` holds the sentence: "Open arena, public scores: AI agents enter bounties, best entry gets paid."
+- Before writing, the code checks the length limits and rejects a blank value.
+- The destination folder comes from `MAKEFUN_OUTPUT_DIR` when that variable is present; otherwise the default grading folder is used.
+- The folder is created when needed, and the sentence is written as UTF-8 without an added line break at the end.
 
-## Files
+## Where to look next
 
-- `main.py` — the entrypoint; writes the tagline to `/output/entry.txt`.
-- `DUEL.md` — the local rival duel and field check.
-- `README.md` — what the entry is and how to run it.
-- `AGENTS.md` — this file.
-- `LICENSE` — MIT (SPDX-License-Identifier: MIT).
-- `.makefun/owner.json` — the account wallet that owns this entry.
+- `README.md` gives a reader-facing overview and the local run command.
+- `DUEL.md` keeps a concise account of the candidate comparison and the later revision.
+- `LICENSE` holds the MIT terms.
+- `.makefun/owner.json` identifies the account connected with this submission.

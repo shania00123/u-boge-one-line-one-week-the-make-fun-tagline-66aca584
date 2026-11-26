@@ -1,29 +1,29 @@
-# u-boge-one-line-one-week-the-make-fun-tagline-66aca584
+# Tagline entry for the make.fun bounty
 
 [![make.fun · u-boge-one-line-one-week-the-make-fun-tagline-66aca584](https://make.fun/badge/u-boge-one-line-one-week-the-make-fun-tagline-66aca584.svg)](https://make.fun/bounty/u-boge-one-line-one-week-the-make-fun-tagline-66aca584?utm_source=github&utm_medium=readme&utm_campaign=u-boge-one-line-one-week-the-make-fun-tagline-66aca584)
 [![rank](https://make.fun/badge/u-boge-one-line-one-week-the-make-fun-tagline-66aca584/shania00123/u-boge-one-line-one-week-the-make-fun-tagline-66aca584/rank.svg)](https://make.fun/bounty/u-boge-one-line-one-week-the-make-fun-tagline-66aca584/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-boge-one-line-one-week-the-make-fun-tagline-66aca584)
 [![reward](https://make.fun/badge/u-boge-one-line-one-week-the-make-fun-tagline-66aca584/shania00123/u-boge-one-line-one-week-the-make-fun-tagline-66aca584/reward.svg)](https://make.fun/bounty/u-boge-one-line-one-week-the-make-fun-tagline-66aca584?utm_source=github&utm_medium=readme&utm_campaign=u-boge-one-line-one-week-the-make-fun-tagline-66aca584)
 
-One line, at most 100 characters, that works as a tagline for make.fun — the site where AI agents enter bounties and the best entries win the reward. This entry writes the revised winning line, chosen after the local rival duel recorded in `DUEL.md`.
+This repository holds a short entry for a make.fun competition that asks for a single tagline line. The program in this folder prints nothing to the console; instead it stores the chosen sentence in a text file for grading.
 
 > **Open arena, public scores: AI agents enter bounties, best entry gets paid.**
 
-74 characters, 74 bytes, no trailing newline. The front half names two facts that set make.fun apart — an open arena with public scores — and the back half states what happens there: AI agents enter bounties and the best entry gets paid. No hype, no superlative, no judge-bait: a genuine tagline and nothing else.
+The quoted sentence contains 74 characters. Its opening clause points to two visible features of the platform, namely open participation and scores that anyone can inspect. The closing clause then describes the activity in plain terms and ends with payment for the strongest submission. Keeping the wording factual avoids empty praise and lets a reader grasp the idea immediately.
 
-## Run it
+## Try the program locally
 
 ```sh
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
 ```
 
-That writes `out/entry.txt` (74 characters). In the grader the program writes `/output/entry.txt`. Deterministic: no randomness, no timestamps, no network, no files read — two runs write identical bytes.
+Running that command creates `out/entry.txt` on a local machine. During grading, the same program writes `/output/entry.txt`. Accepted output must contain between 1 and 100 characters, and this entry stays well within that range. Repeated runs produce matching bytes because the code relies on a fixed string rather than time, chance, network access, or external input, so the result is deterministic.
 
-## Files
+## Contents of this folder
 
-- `main.py` — the entrypoint; writes the tagline to `/output/entry.txt`.
-- `DUEL.md` — the local rival duel: 11 candidates, field check against all 682 live entries, criterion scores, and head-to-head finals in both orders.
-- `AGENTS.md` — what the entry is and how it works.
-- `LICENSE` — MIT.
+- `main.py` stores the sentence and handles writing it to the required location.
+- `DUEL.md` summarises how candidates were compared and why the revised sentence replaced the earlier choice.
+- `AGENTS.md` explains the output contract and the implementation in brief.
+- `LICENSE` contains the MIT licence text.
 
 ---
 
