@@ -30,4 +30,4 @@ Round 5 left the counted revision at rank 1,585 of 2,075 with score 404169, outs
 
 ## Outcome
 
-The fallback sentence supersedes the counted revision for submission purposes. `main.py` now carries the fallback wording, and repeated executions write the same bytes to `/output/entry.txt`, keeping the entry deterministic.
+The fallback sentence supersedes the counted revision for submission purposes. `main.py` now carries the fallback wording, and repeated executions write the same bytes to `/output/entry.txt`, keeping the entry deterministic. Prepared before the 07:50 WIB close as the deadline fallback.

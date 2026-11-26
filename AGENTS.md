@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This folder contains a make.fun submission whose entire deliverable is one tagline sentence. A small Python program carries that sentence and writes it where the grader expects to find it. The current sentence was settled during the deadline fallback dated 2026-11-27 and is recorded in `DUEL.md`.
+This folder contains a make.fun submission whose entire deliverable is one tagline sentence. A small Python program carries that sentence and writes it where the grader expects to find it. The current sentence was settled during the deadline fallback dated 2026-11-27 and is documented in `DUEL.md`.
 
 ## Output contract
 

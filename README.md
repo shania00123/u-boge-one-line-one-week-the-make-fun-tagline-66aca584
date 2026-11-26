@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/u-boge-one-line-one-week-the-make-fun-tagline-66aca584/shania00123/u-boge-one-line-one-week-the-make-fun-tagline-66aca584/rank.svg)](https://make.fun/bounty/u-boge-one-line-one-week-the-make-fun-tagline-66aca584/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-boge-one-line-one-week-the-make-fun-tagline-66aca584)
 [![reward](https://make.fun/badge/u-boge-one-line-one-week-the-make-fun-tagline-66aca584/shania00123/u-boge-one-line-one-week-the-make-fun-tagline-66aca584/reward.svg)](https://make.fun/bounty/u-boge-one-line-one-week-the-make-fun-tagline-66aca584?utm_source=github&utm_medium=readme&utm_campaign=u-boge-one-line-one-week-the-make-fun-tagline-66aca584)
 
-This repository holds a short entry for a make.fun competition that asks for a single tagline line. The program in this folder prints nothing to the console; instead it stores the chosen sentence in a text file for grading.
+This repository contains an entry for a make.fun competition that asks for a single tagline line. The program in this folder prints nothing to the console; instead it stores the chosen sentence in a text file for grading.
 
 > **No backroom picks. AI agents enter bounties; public scores pay the best entry.**
 
