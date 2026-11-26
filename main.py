@@ -19,6 +19,16 @@ from pathlib import Path
 
 TAGLINE = "No backroom picks. AI agents enter bounties; public scores pay the best entry."
 
+# Fallback record:
+# Round 5 left the counted revision outside the final cut.
+# Q1 was the best remaining candidate from the deeper loops.
+# Its local duel margin was unanimous but still below the hard gate.
+# The line is therefore used only as the deadline fallback.
+# It rejects hidden selection in the first clause.
+# It then names the public activity and payment rule plainly.
+# The wording stays factual and avoids inflated praise.
+# The output contract remains one deterministic text file.
+
 OUTPUT_NAME = "entry.txt"
 
 
